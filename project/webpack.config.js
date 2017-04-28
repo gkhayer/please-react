@@ -13,9 +13,14 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         query: {
+          cacheDirectory: true,
           presets: ['react', 'es2015', 'stage-0'],
           plugins: ['react-html-attrs', 'transform-decorators-legacy', 'transform-class-properties'],
         }
+      }, {
+        test: /\.css$/,
+        exclude: /(node_modules|bower_components)/,
+        loaders: ['css-loader'],
       }
     ]
   },
