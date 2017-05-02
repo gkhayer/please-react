@@ -1,10 +1,10 @@
 import React from "react";
 
-export default class Featured extends React.Component {
+export default class Partners extends React.Component {
         render() {
             return(
                 <div>
-                    <h1>Featured</h1>
+                    <h1>Partners</h1>
                 </div>
             );
         }

@@ -1,2 +1,10 @@
-.navbar .navbar-inverse {
-  background-color: #bfe8d2; }
+.mdl-layout__header {
+  background-color: #a7d2cb;
+  border-color: #a7d2cb; }
+  .mdl-layout__header .navbar-nav li a {
+    color: #000;
+    font-size: 20px; }
+    .mdl-layout__header .navbar-nav li a:focus {
+      background-color: #c98474; }
+    .mdl-layout__header .navbar-nav li a:hover {
+      background-color: #c98474; }

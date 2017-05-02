@@ -1,10 +1,10 @@
 import React from "react";
 
-export default class Settings extends React.Component {
-        render(){
+export default class Contact extends React.Component {
+        render() {
             return(
                 <div>
-                    <h1>Settings</h1>
+                    <h1>Contact</h1>
                 </div>
             );
         }

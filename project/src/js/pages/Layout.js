@@ -1,30 +1,26 @@
 import React from "react";
 import { Link } from 'react-router';
 import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
 import "./Layout.css";
 
 export default class Layout extends React.Component {
-  navigate() {
-    //push
-    //replace
-    console.log(this.props);
-    this.props.history.replaceState(null, "/");
-  }
+  
     render() {
       const { history } = this.props;
-      history.isActive("archives");
+      history.isActive("Products");
         return (
-           <div class="container">
-              <div class="row">
-                <div class="col-md-8">
-                  <Header></Header>
-                  <div className="children">
-                    {this.props.children}
-                    <h2>Hello</h2>
-                  </div>
+          <section>
+            <Header></Header>
+            <div className="container">
+                <div className="row">
+                    <div className="children">
+                      {this.props.children}
+                    </div>
                 </div>
-              </div>
-           </div>
+            </div>
+            <Footer></Footer>
+           </section>
         );
     }
 }

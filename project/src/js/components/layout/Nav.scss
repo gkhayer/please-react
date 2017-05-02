@@ -1,7 +1,23 @@
 @import '../../variables';
 
-.navbar {
-  .navbar-inverse {
-    background-color: $theme-color;
+.mdl-layout__header {
+  background-color: $theme-color;
+  border-color: $theme-color;
+
+  .navbar-nav {
+    li {
+      a {
+        color: $black-color;
+        font-size: $heading-size;
+
+        &:focus {
+          background-color: $salmon-color;
+        }
+
+        &:hover {
+          background-color: $salmon-color;
+        }
+      }
+    }
   }
 }

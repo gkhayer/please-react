@@ -4,10 +4,11 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 //import  Bootstrap from './vendor/bootstrap-without-jquery';
 
-import Archives from "./pages/Archives";
-import Featured from "./pages/Featured";
+import Contact from "./pages/Contact";
+import DealsServices from "./pages/DealsServices";
 import Layout from "./pages/Layout";
-import Settings from "./pages/Settings";
+import Partners from "./pages/Partners";
+import Products from "./pages/Products";
 
 
 const app = document.getElementById('app');
@@ -15,9 +16,10 @@ const app = document.getElementById('app');
 ReactDOM.render(
   <Router history={hashHistory}>
       <Route path="/" component={Layout}>
-        <IndexRoute component={Featured}></IndexRoute>
-        <Route path="archives" component={Archives}></Route>
-         <Route path="settings" component={Settings}></Route>
+         <Route path="partners" component={Partners}></Route>
+         <Route path="contact" component={Contact}></Route>
+         <Route path="dealsservices" component={DealsServices}></Route>
+         <Route path="products" component={Products}></Route>
       </Route>
   </Router>,
 app);
