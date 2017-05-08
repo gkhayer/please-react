@@ -3950,7 +3950,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
    * top-level listeners to the document object only, at least for these
    * movement types of events and possibly all events.
    *
-   * @see http://www.quirksmode.org/blog/archives/2010/09/click_event_del.html
+   * @see http://www.quirksmode.org/blog/products/2010/09/click_event_del.html
    *
    * Also, `keyup`/`keypress`/`keydown` do not bubble to the window on IE, but
    * they bubble to document.
@@ -3990,7 +3990,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
             ReactBrowserEventEmitter.ReactEventListener.trapCapturedEvent('topBlur', 'blur', mountAt);
           } else if (isEventSupported('focusin')) {
             // IE has `focusin` and `focusout` events which bubble.
-            // @see http://www.quirksmode.org/blog/archives/2008/04/delegating_the.html
+            // @see http://www.quirksmode.org/blog/products/2008/04/delegating_the.html
             ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent('topFocus', 'focusin', mountAt);
             ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent('topBlur', 'focusout', mountAt);
           }
@@ -4546,7 +4546,7 @@ if (ExecutionEnvironment.canUseDOM) {
   // IE8: When updating a just created node with innerHTML only leading
   // whitespace is removed. When updating an existing node with innerHTML
   // whitespace in root TextNodes is also collapsed.
-  // @see quirksmode.org/bugreports/archives/2004/11/innerhtml_and_t.html
+  // @see quirksmode.org/bugreports/products/2004/11/innerhtml_and_t.html
 
   // Feature detection; only IE8 is known to behave improperly like this.
   var testElement = document.createElement('div');
@@ -18297,7 +18297,7 @@ var SimpleEventPlugin = {
     // non-interactive elements, which means delegated click listeners do not
     // fire. The workaround for this bug involves attaching an empty click
     // listener on the target node.
-    // http://www.quirksmode.org/blog/archives/2010/09/click_event_del.html
+    // http://www.quirksmode.org/blog/products/2010/09/click_event_del.html
     if (registrationName === 'onClick' && !isInteractive(inst._tag)) {
       var key = getDictionaryKey(inst);
       var node = ReactDOMComponentTree.getNodeFromInstance(inst);

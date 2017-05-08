@@ -1,19 +1,5 @@
 @import  '../variables';
 
-$pink-color: #ffc0cb;
-
-a {
-  .test {
-    border: 2px solid $black-color;
-
-    &:active {
-      border: 2px solid $black-color;
-    }
-  }
+.children {
+  margin-top: 100px;
 }
-
-.wrapper {
-  background-color: $pink-color;
-  color: green;
-}
-

@@ -1,5 +1,6 @@
 var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 
 module.exports = {
@@ -7,30 +8,30 @@ module.exports = {
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./js/client.js",
   module: {
-    loaders: [
-      {
-        test: /\.js?$/,
-        exclude: /(node_modules|bower_components)/,
+    rules: [{
+      test: /\.css$/,
+      use: ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+        use: 'css-loader',
+      }),
+    }, {
+      test: /\.js?$/,
+      use: {
         loader: 'babel-loader',
-        query: {
-          cacheDirectory: true,
-          presets: ['react', 'es2015', 'stage-0'],
-          plugins: ['react-html-attrs', 'transform-decorators-legacy', 'transform-class-properties'],
+        options: {
+          presets: ['react', 'es2015', 'stage-0']
         }
-      }, {
-        test: /\.css$/,
-        exclude: /(node_modules|bower_components)/,
-        loaders: ['css-loader'],
       }
-    ]
+    }],
   },
   output: {
     path: __dirname + "/src/",
     filename: "client.js"
   },
-  plugins: debug ? [] : [
+  plugins: debug ? [new ExtractTextPlugin('styles.css')] : [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+    new ExtractTextPlugin('styles.css'),
   ],
 };

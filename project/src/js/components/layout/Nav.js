@@ -20,24 +20,23 @@ export default class Nav extends React.Component {
   render() {
 
     return (
-      <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-          </div>
-          <div id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+      <nav className="mdl-navigation mdl-layout--large-screen-only" role="navigation">
+          <div>
+            <ul className="nav navbar-nav">
               <li>
-                <IndexLink to="/">Featured</IndexLink>
+                <Link to="Products" className="mdl-navigation__link">Products</Link>
               </li>
               <li>
-                <Link to="archives" activeClassName="test">Archives</Link>
+                <Link to="DealsServices" className="mdl-navigation__link">Deals and Services</Link>
               </li>
               <li>
-                <Link to="settings" activeClassName="test">Settings</Link>
+                <Link to="Partners" className="mdl-navigation__link">Partners</Link>
+              </li>
+              <li>
+                <Link to="Contact" className="mdl-navigation__link">Contact</Link>
               </li>
             </ul>
           </div>
-        </div>
       </nav>
     );
   }
