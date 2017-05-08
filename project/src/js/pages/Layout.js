@@ -12,6 +12,22 @@ export default class Layout extends React.Component {
         return (
           <section>
             <Header></Header>
+            <div className="demo-layout-waterfall mdl-layout mdl-js-layout">
+             
+                <div className="mdl-layout__header-row">
+                  <div className="mdl-textfield__expandable-holder"></div>
+                </div>
+                <div className="mdl-layout__header-row">
+                  <div className="mdl-layout-spacer"></div>
+                    <nav className="mdl-navigation">
+                      <a className="mdl-navigation__link" href="">Link</a>
+                      <a className="mdl-navigation__link" href="">Link</a>
+                      <a className="mdl-navigation__link" href="">Link</a>
+                      <a className="mdl-navigation__link" href="">Link</a>
+                    </nav>
+                  </div>
+            </div>
+
             <div className="container">
                 <div className="row">
                     <div className="children">

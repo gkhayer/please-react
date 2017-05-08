@@ -1,7 +1,12 @@
 @import '../variables';
 
-.gallery-container {
-  padding-top: .9375rem;
+$background-modal: $black-color(21, 21, 21, .75);
+
+.container-fluid {
+  &.gallery-container {
+    background-color: $gallery-background;
+    padding-top: .9375rem;
+  }
 }
 
 .gallery-card {
@@ -10,11 +15,17 @@
   position: relative;
 }
 
-
 .gallery-thumbnail {
-  border-radius: 1px;
+  border-radius: $radius-gallery;
   height: auto;
   max-width: 100%;
+
+  & {
+    :focus ~ .card-icon-open,
+    :hover ~ .card-icon-open {
+      opacity: 1;
+    }
+  }
 }
 
 .card-icon-open {
@@ -27,16 +38,17 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  //transition: $transition;
+  transition: $transition;
 
   &:focus,
   &:hover {
     color: $black-color;
+    opacity: 1;
   }
 }
 
 .modal-overlay {
-  background: $black-color;
+  background: $background-modal;
   height: 100%;
   left: 0;
   position: absolute;
@@ -46,7 +58,7 @@
 }
 
 .modal-body {
-  border-radius: 1px;
+  border-radius: $radius-gallery;
   left: 50%;
   overflow: auto;
   padding: 0;
@@ -62,7 +74,7 @@
   position: absolute;
   right: 8px;
   top: 0;
-  //transition: $transition;
+  transition: $transition;
 
   &:focus,
   &:hover {

@@ -10,10 +10,7 @@
         color: $black-color;
         font-size: $heading-size;
 
-        &:focus {
-          background-color: $salmon-color;
-        }
-
+        &:focus,
         &:hover {
           background-color: $salmon-color;
         }
