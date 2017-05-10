@@ -58,3 +58,12 @@
   transition: all 0.25s ease-in-out; }
   .modal-close:focus, .modal-close:hover {
     color: #fff; }
+
+.card-detail {
+  border: 1px solid #000;
+  bottom: 18px;
+  display: flex;
+  height: 60px;
+  padding: 0 10px;
+  position: relative;
+  width: 100%; }

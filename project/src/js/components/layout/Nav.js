@@ -20,7 +20,8 @@ export default class Nav extends React.Component {
   render() {
 
     return (
-      <nav className="mdl-navigation mdl-layout--large-screen-only" role="navigation">
+     <div className="wrapper">
+        <nav className="mdl-navigation mdl-layout--large-screen-only" role="navigation">
           <div>
             <ul className="nav navbar-nav">
               <li>
@@ -37,7 +38,17 @@ export default class Nav extends React.Component {
               </li>
             </ul>
           </div>
-      </nav>
+        </nav>
+        <div className="mdl-layout__drawer">
+          <span className="mdl-layout-title">Computer Parts</span>
+          <nav className="mdl-navigation">
+            <Link to="Products" className="mdl-navigation__link">Products</Link>
+            <Link to="DealsServices" className="mdl-navigation__link">Deals and Services</Link>
+            <Link to="Partners" className="mdl-navigation__link">Partners</Link>
+            <Link to="Contact" className="mdl-navigation__link">Contact</Link>
+          </nav>
+        </div>
+      </div>
     );
   }
 }
