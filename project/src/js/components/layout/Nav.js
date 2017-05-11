@@ -10,7 +10,6 @@ export default class Nav extends React.Component {
       collapsed: true,
     };
   }
-  
 
   toggleCollapse() {
     const collapsed = !this.state.collapsed;
@@ -43,7 +42,19 @@ export default class Nav extends React.Component {
           <span className="mdl-layout-title">Computer Parts</span>
           <nav className="mdl-navigation">
             <Link to="Products" className="mdl-navigation__link">Products</Link>
-            <Link to="DealsServices" className="mdl-navigation__link">Deals and Services</Link>
+            <Link to="DealsServices" className="mdl-navigation__link">
+              <button id="demo-menu-lower-left"
+                className="mdl-button mdl-js-button mdl-button--icon">
+                <i className="material-icons">Deals and Services</i>
+              </button>
+              <ul className="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                for="demo-menu-lower-left">
+                <li className="mdl-menu__item">Some Action</li>
+                <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
+                <li disabled className="mdl-menu__item">Disabled Action</li>
+                <li className="mdl-menu__item">Yet Another Action</li>className
+              </ul>
+            </Link>
             <Link to="Partners" className="mdl-navigation__link">Partners</Link>
             <Link to="Contact" className="mdl-navigation__link">Contact</Link>
           </nav>

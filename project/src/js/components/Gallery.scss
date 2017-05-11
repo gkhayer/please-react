@@ -10,9 +10,16 @@ $background-modal: $black-color(21, 21, 21, .75);
 }
 
 .gallery-card {
+  height: 300px;
   margin-bottom: 1.875rem;
   overflow: hidden;
   position: relative;
+
+  .images-card {
+    height: 250px;
+    position: relative;
+    right: 35px;
+  }
 }
 
 .gallery-thumbnail {
@@ -83,11 +90,17 @@ $background-modal: $black-color(21, 21, 21, .75);
 }
 
 .card-detail {
-  border: 1px solid $black-color;
+  background-color: $grape-color;
   bottom: 18px;
-  display: flex;
-  height: 60px;
+  color: $white-color;
+  display: grid;
+  height: 65px;
   padding: 0 10px;
   position: relative;
   width: 100%;
+
+  .item-price {
+    text-align: right;
+  }
 }
+

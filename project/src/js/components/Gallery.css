@@ -3,9 +3,14 @@
   padding-top: .9375rem; }
 
 .gallery-card {
+  height: 300px;
   margin-bottom: 1.875rem;
   overflow: hidden;
   position: relative; }
+  .gallery-card .images-card {
+    height: 250px;
+    position: relative;
+    right: 35px; }
 
 .gallery-thumbnail {
   border-radius: 4px;
@@ -60,10 +65,13 @@
     color: #fff; }
 
 .card-detail {
-  border: 1px solid #000;
+  background-color: #94618e;
   bottom: 18px;
-  display: flex;
-  height: 60px;
+  color: #fff;
+  display: grid;
+  height: 65px;
   padding: 0 10px;
   position: relative;
   width: 100%; }
+  .card-detail .item-price {
+    text-align: right; }
