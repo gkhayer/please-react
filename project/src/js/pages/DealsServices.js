@@ -3,7 +3,7 @@ import './DealsServices.css';
 
 export default class DealsServices extends React.Component {
   render(){
-    return(
+    return (
       <div className="wrapper">
           <h1>Deals and Services</h1>
       </div>

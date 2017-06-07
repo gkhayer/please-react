@@ -27,7 +27,16 @@ export default class Nav extends React.Component {
                 <Link to="Products" className="mdl-navigation__link">Products</Link>
               </li>
               <li>
-                <Link to="DealsServices" className="mdl-navigation__link">Deals and Services</Link>
+                <Link to="DealsServices" className="mdl-navigation__link" id="demo-menu-lower-left">
+                  Deals and Services
+                  <ul className="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                      htmlFor="demo-menu-lower-left">
+                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">Newegg Mobile</li>
+                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">Email Deals</li>
+                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">Daily Deals</li>
+                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">Marketplace Spotlight</li>
+                  </ul>
+                </Link>
               </li>
               <li>
                 <Link to="Partners" className="mdl-navigation__link">Partners</Link>
@@ -41,20 +50,9 @@ export default class Nav extends React.Component {
         <div className="mdl-layout__drawer">
           <span className="mdl-layout-title">Computer Parts</span>
           <nav className="mdl-navigation">
+          <button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Button</button>
             <Link to="Products" className="mdl-navigation__link">Products</Link>
-            <Link to="DealsServices" className="mdl-navigation__link">
-              <button id="demo-menu-lower-left"
-                className="mdl-button mdl-js-button mdl-button--icon">
-                <i className="material-icons">Deals and Services</i>
-              </button>
-              <ul className="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
-                for="demo-menu-lower-left">
-                <li className="mdl-menu__item">Some Action</li>
-                <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
-                <li disabled className="mdl-menu__item">Disabled Action</li>
-                <li className="mdl-menu__item">Yet Another Action</li>className
-              </ul>
-            </Link>
+            <Link to="DealsServices" className="mdl-navigation__link">Deals and Services</Link>
             <Link to="Partners" className="mdl-navigation__link">Partners</Link>
             <Link to="Contact" className="mdl-navigation__link">Contact</Link>
           </nav>

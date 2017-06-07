@@ -6,9 +6,6 @@ import './Gallery.css';
 export default class Gallery extends React.Component{
  render() {
  const {cardDetail} = this.props;
- console.log(this.props.cardDetail);
- console.log(this.props.cardDetail.image);
- console.log(cardDetail.itemDetail);
   return(
    <div className='container-fluid gallery-container'>
    <div className='row'>
