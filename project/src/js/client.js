@@ -4,11 +4,11 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 //import  Bootstrap from './vendor/bootstrap-without-jquery';
 
-import Contact from "./pages/Contact";
-import DealsServices from "./pages/DealsServices";
-import Layout from "./pages/Layout";
-import Partners from "./pages/Partners";
-import Products from "./pages/Products";
+import Contact from "./pages/Contact/Contact.js";
+import DealsServices from "./pages/DealsServices/DealsServices.js";
+import Layout from "./Layout/Layout.js";
+import Partners from "./pages/Partners/Partners.js";
+import Products from "./pages/Products/Products.js";
 
 
 const app = document.getElementById('app');
