@@ -1,4 +1,4 @@
-@import '../variables';
+@import '../../variables';
 
 $background-modal: $black-color(21, 21, 21, .75);
 
@@ -10,15 +10,12 @@ $background-modal: $black-color(21, 21, 21, .75);
 }
 
 .gallery-card {
-  height: 300px;
-  margin-bottom: 1.875rem;
   overflow: hidden;
   position: relative;
 
   .images-card {
-    height: 250px;
-    position: relative;
-    right: 35px;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -65,14 +62,7 @@ $background-modal: $black-color(21, 21, 21, .75);
 }
 
 .modal-body {
-  border-radius: $radius-gallery;
-  left: 50%;
-  overflow: auto;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 11;
+  padding: 20px;
 }
 
 .modal-close {
@@ -91,16 +81,12 @@ $background-modal: $black-color(21, 21, 21, .75);
 
 .card-detail {
   background-color: $grape-color;
-  bottom: 18px;
   color: $white-color;
   display: grid;
-  height: 65px;
-  padding: 0 10px;
-  position: relative;
+  padding: 10px;
   width: 100%;
 
   .item-price {
     text-align: right;
   }
 }
-
