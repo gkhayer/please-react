@@ -1,0 +1,10 @@
+.categories .col-md-3 {
+  border: 0.5px solid #eee;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px;
+  text-align: center; }
+
+.categories img {
+  max-height: 100%;
+  max-width: 100%; }

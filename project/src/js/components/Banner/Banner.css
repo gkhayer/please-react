@@ -1,0 +1,13 @@
+.banner-products {
+  background-image: linear-gradient(to right, #a7d2cb, #7d2ae8);
+  /* Standard syntax (must be last) */
+  height: 200px;
+  width: 100%; }
+
+.banner-deals {
+  background-image: linear-gradient(to right, #00c4cc, #7d2ae8);
+  /* Standard syntax (must be last) */ }
+
+.banner-partners {
+  background-image: linear-gradient(to right, #ffc0cb, #7d2ae8);
+  /* Standard syntax (must be last) */ }

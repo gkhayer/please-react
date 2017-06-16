@@ -1,0 +1,16 @@
+@import '../../variables';
+
+.categories {
+  .col-md-3 {
+    border: .5px solid $gray;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

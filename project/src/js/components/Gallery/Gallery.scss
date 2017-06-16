@@ -2,11 +2,10 @@
 
 $background-modal: $black-color(21, 21, 21, .75);
 
-.container-fluid {
-  &.gallery-container {
-    background-color: $gallery-background;
-    padding-top: .9375rem;
-  }
+.gallery {
+  background-color: $gallery-background;
+  padding-right: .9375rem;
+  padding-top: .9375rem;
 }
 
 .gallery-card {

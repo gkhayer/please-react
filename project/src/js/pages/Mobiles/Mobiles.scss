@@ -1,0 +1,16 @@
+@import '../../variables';
+
+.img {
+  display: inline-block;
+  position: relative;
+
+  .image1 {
+    z-index: 2;
+  }
+
+  .image2 {
+    margin-left: -40px;
+    z-index: 1;
+  }
+}
+

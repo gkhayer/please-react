@@ -1,5 +1,6 @@
-.container-fluid.gallery-container {
+.gallery {
   background-color: #dcd0c0;
+  padding-right: .9375rem;
   padding-top: .9375rem; }
 
 .gallery-card {

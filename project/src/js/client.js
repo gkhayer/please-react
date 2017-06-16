@@ -6,9 +6,11 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import Contact from "./pages/Contact/Contact.js";
 import DealsServices from "./pages/DealsServices/DealsServices.js";
-import Layout from "./Layout/Layout.js";
-import Partners from "./pages/Partners/Partners.js";
-import Products from "./pages/Products/Products.js";
+import Layout from "./Layout";
+import Partners from "./pages/Partners";
+import Products from "./pages/Products";
+import Mobiles from "./pages/Mobiles";
+import SoftwareServices from "./pages/SoftwareServices";
 
 
 const app = document.getElementById('app');
@@ -20,6 +22,8 @@ ReactDOM.render(
          <Route path="contact" component={Contact}></Route>
          <Route path="dealsservices" component={DealsServices}></Route>
          <Route path="products" component={Products}></Route>
+         <Route path="mobiles" component={Mobiles}></Route>
+         <Route path="SoftwareServices" component={SoftwareServices}></Route>
       </Route>
   </Router>,
 app);

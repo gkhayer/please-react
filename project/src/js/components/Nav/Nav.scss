@@ -11,10 +11,18 @@
         font-size: $heading-size;
 
         &:focus,
-        &:hover {
+        &:hover,
+        &:active {
           background-color: $salmon-color;
+        }
+
+        .child-link {
+          color: $black-color;
+          font-size: 15px;
         }
       }
     }
   }
 }
+
+

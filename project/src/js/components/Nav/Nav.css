@@ -4,5 +4,8 @@
   .mdl-layout__header .navbar-nav li a {
     color: #fff;
     font-size: 20px; }
-    .mdl-layout__header .navbar-nav li a:focus, .mdl-layout__header .navbar-nav li a:hover {
+    .mdl-layout__header .navbar-nav li a:focus, .mdl-layout__header .navbar-nav li a:hover, .mdl-layout__header .navbar-nav li a:active {
       background-color: #c0b283; }
+    .mdl-layout__header .navbar-nav li a .child-link {
+      color: #000;
+      font-size: 15px; }

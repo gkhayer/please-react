@@ -65,7 +65,7 @@ export default class Products extends React.Component {
       },
       {
         image: 'Images/6833-21039-smps.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$780.00',
         itemName: 'item 11',
         itemDetail: 'Server'
       },
@@ -77,7 +77,7 @@ export default class Products extends React.Component {
       },
       {
         image: 'Images/6833-21039-smps.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$99.99',
         itemName: 'item 13',
         itemDetail: 'Server'
       },
@@ -100,43 +100,43 @@ export default class Products extends React.Component {
       },
       {
         image: 'Images/32-166-138-15.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$560.00',
         itemName: 'item 18',
         itemDetail: 'CGW Cover'
       },
       {
         image: 'Images/CPU.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$700.00',
         itemName: 'item 19',
         itemDetail: 'CPU'
       },
       {
         image: 'Images/dell-shop-desktops.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$350.00',
         itemName: 'item 20',
         itemDetail: 'Dell shop desktops'
       },
       {
         image: 'Images/gameremot.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$90.00',
         itemName: 'item 21',
         itemDetail: 'Game Remote'
       },
       {
         image: 'Images/image_adapt_full.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$90.00',
         itemName: 'item 22',
         itemDetail: 'Mobile Adaptor'
       },
       {
         image: 'Images/razer_mouse gaming.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$400.00',
         itemName: 'item 24',
         itemDetail: 'razer_mouse gaming'
       },
       {
         image: 'Images/redmouse.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$80.00',
         itemName: 'item 25',
         itemDetail: 'red mouse'
       },
@@ -160,13 +160,13 @@ export default class Products extends React.Component {
       },
       {
         image: 'Images/mac-storage.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$860.00',
         itemName: 'item 30',
         itemDetail: 'mac-storage'
       },
       {
         image: 'Images/dell-shop-desktops.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$500.00',
         itemName: 'item 23',
         itemDetail: 'mice Corsair — MIce High performance DDR3 and DDR4png'
       },
@@ -178,7 +178,7 @@ export default class Products extends React.Component {
       },
       {
         image: 'Images/6833-21039-smps.jpg',
-        itemPrice: '$89.00',
+        itemPrice: '$190.00',
         itemName: 'item 16',
         itemDetail: 'Server 2'
       }

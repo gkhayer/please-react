@@ -31,10 +31,22 @@ export default class Nav extends React.Component {
                   Deals and Services
                   <ul className="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
                       htmlFor="demo-menu-lower-left">
-                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">Newegg Mobile</li>
-                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">Email Deals</li>
-                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">Daily Deals</li>
-                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">Marketplace Spotlight</li>
+                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">
+                      <Link to="Mobiles" className="child-link">Mobiles</Link>
+                    </li>
+                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">
+                      <Link to="SoftwareServices" className="child-link">Software Services</Link>
+                    </li>
+                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">
+                      <Link className="child-link">
+                        Daily Deals
+                      </Link>
+                    </li>
+                    <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">
+                      <Link className="child-link">
+                        Marketplace Spotlight
+                      </Link>
+                    </li>
                   </ul>
                 </Link>
               </li>
