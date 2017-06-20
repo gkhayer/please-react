@@ -9,3 +9,5 @@
     .mdl-layout__header .navbar-nav li a .child-link {
       color: #000;
       font-size: 15px; }
+  .mdl-layout__header .navbar-nav li img {
+    padding: 14.5px; }

@@ -56,6 +56,9 @@ export default class Nav extends React.Component {
               <li>
                 <Link to="Contact" className="mdl-navigation__link">Contact</Link>
               </li>
+              <li>
+                <img src="../../../Images/cart-outline.png" alt="cart-outline"/>
+              </li>
             </ul>
           </div>
         </nav>

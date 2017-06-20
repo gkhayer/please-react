@@ -8,3 +8,7 @@
 .categories img {
   max-height: 100%;
   max-width: 100%; }
+
+.categories .softwares {
+  background-color: #94618e;
+  color: #fff; }
