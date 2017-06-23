@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {Row, Col, Grid, Carousel, Image, ListGroup, ListGroupItem, Table} from 'react-bootstrap';
 import './SoftwareServices.css';
 import {operatingSystem, productivitySoftware, securitySoftware, audioVideoSoftware} from '../../Data/SoftwareServicesData';
+import SoftwaresDetail from '../../components/SoftwaresDetail';
 
 export default class SoftwareServices extends React.Component {
 
@@ -71,8 +72,8 @@ export default class SoftwareServices extends React.Component {
                   { data.map((value, idx) => (
                       <tr key={`operating-system-${idx}`}>
                         <td>{value.name}</td>
-                        <td><a rel="stylesheet" href="#">{value.desc}</a></td>
-                        <td dataField='price'>{value.price}</td>
+                        <td><a href="../../components/SoftwaresDetail">{value.desc}</a></td>
+                        <td>{value.price}</td>
                       </tr>
                     ))
                   }

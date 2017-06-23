@@ -11,6 +11,7 @@ import Partners from "./pages/Partners";
 import Products from "./pages/Products";
 import Mobiles from "./pages/Mobiles";
 import SoftwareServices from "./pages/SoftwareServices";
+import SoftwaresDetail from "./components/SoftwaresDetail";
 
 
 const app = document.getElementById('app');
@@ -23,7 +24,8 @@ ReactDOM.render(
          <Route path="dealsservices" component={DealsServices}></Route>
          <Route path="products" component={Products}></Route>
          <Route path="mobiles" component={Mobiles}></Route>
-         <Route path="SoftwareServices" component={SoftwareServices}></Route>
+         <Route path="softwareServices" component={SoftwareServices}></Route>
+         <Route path="softwaresDetail" component={SoftwaresDetail}></Route>
       </Route>
   </Router>,
 app);

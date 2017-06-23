@@ -12,7 +12,7 @@ export default class SoftwaresDetail extends React.Component {
           {
             this.props.operatingSystem.map((value, idx) => (
             <Row key={'software-detail-${idx}'}>
-                <Col md={6}>image</Col>
+                <Col md={6}>{value.name}</Col>
                 <Col md={6}>desc, add to cart</Col>
             </Row>
             ))
