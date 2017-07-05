@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {Row, Col, Grid, Carousel, Image, ListGroup, ListGroupItem, Table} from 'react-bootstrap';
 import './SoftwareServices.css';
 import {operatingSystem, productivitySoftware, securitySoftware, audioVideoSoftware} from '../../Data/SoftwareServicesData';
-import SoftwaresDetail from '../../components/SoftwaresDetail';
+import ProductsDetail from '../../components/ProductsDetail';
 
 export default class SoftwareServices extends React.Component {
 
@@ -72,7 +72,7 @@ export default class SoftwareServices extends React.Component {
                   { data.map((value, idx) => (
                       <tr key={`operating-system-${idx}`}>
                         <td>{value.name}</td>
-                        <td><a href="../../components/SoftwaresDetail">{value.desc}</a></td>
+                        <td><a href="../../components/ProductsDetail">{value.desc}</a></td>
                         <td>{value.price}</td>
                       </tr>
                     ))
@@ -82,6 +82,7 @@ export default class SoftwareServices extends React.Component {
             </div>
           )
         }
+        <ProductsDetail addToCart={addToCart}/>
       </div>
     )
   }
