@@ -57,7 +57,7 @@ export default class Gallery extends React.Component{
           )})
         }
         { selectedItem &&
-          <Modal show onHide={this.close}>
+          <Modal show onHide={this.close.bind(this)}>
             <Modal.Header closeButton>
               <Modal.Title >{selectedItem.itemName}</Modal.Title>
             </Modal.Header>

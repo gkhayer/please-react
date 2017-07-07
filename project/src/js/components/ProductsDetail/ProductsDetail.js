@@ -6,6 +6,7 @@ import {operatingSystem, productivitySoftware, securitySoftware, audioVideoSoftw
 
 export default class ProductsDetail extends React.Component {
   render() {
+    const {addToCart} = this.props;
     return (
       <div>
         <Grid>

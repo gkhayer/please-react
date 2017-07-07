@@ -10,5 +10,14 @@
   max-width: 100%; }
 
 .categories .softwares {
-  background-color: #94618e;
+  background-color: #9954bb;
   color: #fff; }
+
+.software-services-body td button {
+  background: none;
+  border: 0;
+  color: #46b8da; }
+  .software-services-body td button:hover:focus {
+    color: #2020ab;
+    background: none;
+    border: 0; }

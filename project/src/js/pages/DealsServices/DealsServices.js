@@ -6,7 +6,6 @@ import { FieldGroup, FormGroup } from 'react-bootstrap';
 export default class DealsServices extends React.Component {
 
   render(){
-    console.log(browserHistory);
     return (
       <div className="wrapper">
           <h1>Deals and Services</h1>

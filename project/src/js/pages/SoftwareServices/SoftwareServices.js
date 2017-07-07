@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Row, Col, Grid, Carousel, Image, ListGroup, ListGroupItem, Table} from 'react-bootstrap';
+import {Row, Col, Grid, Carousel, Image, ListGroup, Button, Modal, ListGroupItem, Table} from 'react-bootstrap';
 import './SoftwareServices.css';
 import {operatingSystem, productivitySoftware, securitySoftware, audioVideoSoftware} from '../../Data/SoftwareServicesData';
 import ProductsDetail from '../../components/ProductsDetail';
@@ -9,14 +9,27 @@ export default class SoftwareServices extends React.Component {
 
   state = {
     data: operatingSystem,
+    selectedItem: null,
   }
 
   setData(data) {
     this.setState({data});
   }
 
+  close() {
+    this.setState({ selectedItem: null });
+  }
+
+  open(product) {
+    return () => {
+      this.setState({selectedItem: product});
+    }
+  };
+
   render() {
     const {data} = this.state;
+    const selectedItem = this.state.selectedItem;
+
     return (
       <div>
         <div className="wrapper-mobiles">
@@ -52,14 +65,14 @@ export default class SoftwareServices extends React.Component {
             </Row>
             <Row>
               <Col md={3}>
-                <h2>Software & Services Featured Items</h2>
+                <h2>Featured Items</h2>
               </Col>
             </Row>
           </Grid>
         </div>
         {
           data && (
-            <div className="SoftwareServicesBody">
+            <div className="software-services-body">
               <Table striped bordered condensed hover ref='table'>
               <thead>
                 <tr>
@@ -72,7 +85,13 @@ export default class SoftwareServices extends React.Component {
                   { data.map((value, idx) => (
                       <tr key={`operating-system-${idx}`}>
                         <td>{value.name}</td>
-                        <td><a href="../../components/ProductsDetail">{value.desc}</a></td>
+                        <td><Button
+                              bsSize="small"
+                              bsStyle="info"
+                              onClick={this.open(value).bind(this)}>
+                              {value.desc}
+                            </Button>
+                        </td>
                         <td>{value.price}</td>
                       </tr>
                     ))
@@ -82,7 +101,18 @@ export default class SoftwareServices extends React.Component {
             </div>
           )
         }
-        <ProductsDetail addToCart={addToCart}/>
+        {
+          selectedItem && 
+          <Modal show onHide={this.close.bind(this)}>
+            <Modal.Header closeButton>
+              <Modal.Title>{selectedItem.desc}</Modal.Title>
+            </Modal.Header>
+            <Modal.Footer>
+              <Button onClick={this.close.bind(this)}>Close</Button>
+            </Modal.Footer>
+          </Modal>
+        }
+
       </div>
     )
   }
