@@ -118,7 +118,8 @@ const securitySoftware = [
   {
     name: 'Norton',
     desc: 'Symantec Norton Security with Antivirus Deluxe - 5 Devices [Key Card]',
-    price: '$80'
+    price: '$80',
+    image: './../Images/softwareServices/32-031-518-03.jpg'
   },
   {
     name: 'Kaspersky',

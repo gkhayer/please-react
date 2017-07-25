@@ -24,15 +24,17 @@
   td {
     button {
       background: none;
-      border: 0;
+      border: .5px solid transparent;
       color: rgba($sky-blue-color, 1);
-      &:hover
-      {
-        &:focus {
-          color: rgba(#2020ab, 1);
-          background: none;
-          border: 0;
-        }
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:active:focus,
+      &:active:hover {
+        background-color: $gray;
+        border-color: $gray;
+        color: $black-color;
       }
     }
   }

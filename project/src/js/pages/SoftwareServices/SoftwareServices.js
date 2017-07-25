@@ -35,31 +35,31 @@ export default class SoftwareServices extends React.Component {
         <div className="wrapper-mobiles">
           <Carousel>
             <Carousel.Item>
-              <img alt="Image1" src="../../Images/cor1.jpg"/>
+              <img alt="Image1" src="../../Images/products/cor1.jpg"/>
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="Image2" src="../../Images/cor2.jpg"/>
+              <img alt="Image2" src="../../Images/products/cor2.jpg"/>
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="Image3" src="../../Images/cor3.jpg"/>
+              <img alt="Image3" src="../../Images/products/cor3.jpg"/>
             </Carousel.Item>
           </Carousel>
           <Grid>
             <Row className="categories">
               <Col md={3} onClick={() => this.setData(operatingSystem)}>
-                <Image src="../../Images/operating-systems2.jpg" />
+                <Image src="../../Images/products/operating-systems2.jpg" />
                 <div className="softwares">Operating Systems</div>
               </Col>
               <Col md={3} onClick={() => this.setData(productivitySoftware)}>
-                <Image src="../../Images/productivity.jpg" />
+                <Image src="../../Images/products/productivity.jpg" />
                 <div className="softwares">Productivity Software</div>
               </Col>
               <Col md={3} onClick={() => this.setData(securitySoftware)}>
-                <Image src="../../Images/security.jpg" />
+                <Image src="../../Images/products/security.jpg" />
                 <div className="softwares">Security Software</div>
               </Col>
               <Col md={3} onClick={() => this.setData(audioVideoSoftware)}>
-                <Image src="../../Images/audio-video.jpg"/>
+                <Image src="../../Images/products/audio-video.jpg"/>
                 <div className="softwares">Audio & Video Software</div>
               </Col>
             </Row>
@@ -86,8 +86,6 @@ export default class SoftwareServices extends React.Component {
                       <tr key={`operating-system-${idx}`}>
                         <td>{value.name}</td>
                         <td><Button
-                              bsSize="small"
-                              bsStyle="info"
                               onClick={this.open(value).bind(this)}>
                               {value.desc}
                             </Button>
@@ -107,6 +105,12 @@ export default class SoftwareServices extends React.Component {
             <Modal.Header closeButton>
               <Modal.Title>{selectedItem.desc}</Modal.Title>
             </Modal.Header>
+            <Modal.Body>
+            <div>
+              {selectedItem.name}
+            </div>
+            <Image src={selectedItem.image} alt={selectedItem.name}/>
+            </Modal.Body>
             <Modal.Footer>
               <Button onClick={this.close.bind(this)}>Close</Button>
             </Modal.Footer>

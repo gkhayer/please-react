@@ -15,9 +15,9 @@
 
 .software-services-body td button {
   background: none;
-  border: 0;
+  border: .5px solid transparent;
   color: #46b8da; }
-  .software-services-body td button:hover:focus {
-    color: #2020ab;
-    background: none;
-    border: 0; }
+  .software-services-body td button:hover, .software-services-body td button:focus, .software-services-body td button:active, .software-services-body td button:active:focus, .software-services-body td button:active:hover {
+    background-color: #eee;
+    border-color: #eee;
+    color: #000; }
