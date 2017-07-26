@@ -1,7 +1,7 @@
 import React, { Components} from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from "react-dom";
-import { Popover, Tooltip, Button, Modal, OverlayTrigger, Grid, Row, Col} from 'react-bootstrap';
+import { Popover, Tooltip, Button, Modal, Thumbnail, OverlayTrigger, Grid, Row, Col} from 'react-bootstrap';
 import './Gallery.css';
 
 // Component for gallery
@@ -39,7 +39,7 @@ export default class Gallery extends React.Component{
         {
           this.props.cardDetail.map((value, idx) => {
           return (
-              <Col key={`img${idx}`} md={3} className="wrapper">
+              <Col key={`img${idx}`} xs={6} md={3} className="wrapper1">
                 <div className='gallery-card'>
                   <img className="images-card" src={value.image} alt={value.itemName}/>
                 </div>
@@ -63,6 +63,7 @@ export default class Gallery extends React.Component{
             </Modal.Header>
             <Modal.Body>
               {selectedItem.itemDetail}
+              <img src={selectedItem.image} alt={selectedItem.name}/>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={this.close.bind(this)}>Close</Button>

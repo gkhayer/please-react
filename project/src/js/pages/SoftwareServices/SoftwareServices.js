@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Row, Col, Grid, Carousel, Image, ListGroup, Button, Modal, ListGroupItem, Table} from 'react-bootstrap';
+import {Row, Col, Grid, Carousel, Image, FieldGroup, ListGroup, Button, Modal, ListGroupItem, Table} from 'react-bootstrap';
 import './SoftwareServices.css';
 import {operatingSystem, productivitySoftware, securitySoftware, audioVideoSoftware} from '../../Data/SoftwareServicesData';
 import ProductsDetail from '../../components/ProductsDetail';
@@ -105,11 +105,14 @@ export default class SoftwareServices extends React.Component {
             <Modal.Header closeButton>
               <Modal.Title>{selectedItem.desc}</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
-            <div>
-              {selectedItem.name}
-            </div>
-            <Image src={selectedItem.image} alt={selectedItem.name}/>
+            <Modal.Body className="modalbody">
+              <Image className="modal-image" src={selectedItem.image} alt={selectedItem.name}/>
+              <div><span className="itemdescriptions">Modal</span>: {selectedItem.desc}</div>
+              <div><span className="itemdescriptions">Price</span>: {selectedItem.price}</div>
+              <form>
+                <input type="number" name="Quantity"/>
+              </form>
+                <Button className="add-to-cart">Add to Cart</Button>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={this.close.bind(this)}>Close</Button>

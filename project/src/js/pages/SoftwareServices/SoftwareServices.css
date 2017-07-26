@@ -21,3 +21,22 @@
     background-color: #eee;
     border-color: #eee;
     color: #000; }
+
+.modal-image {
+  float: left;
+  position: relative;
+  right: 20px; }
+
+.itemdescriptions {
+  color: #9954bb; }
+
+.add-to-cart.btn-default {
+  background-color: #eee;
+  border: 1px solid #808080;
+  color: #000;
+  margin: 8px; }
+  .add-to-cart.btn-default:hover, .add-to-cart.btn-default:focus, .add-to-cart.btn-default:active, .add-to-cart.btn-default:visited {
+    background-color: #808080;
+    border: 1px solid #808080;
+    color: #fff;
+    margin: 8px; }

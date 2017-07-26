@@ -141,12 +141,6 @@ export default class Products extends React.Component {
         itemDetail: 'red mouse'
       },
       {
-        image: 'Images/products/32-138-668-S02.jpg',
-        itemPrice: '$5.00',
-        itemName: 'item 26',
-        itemDetail: 'Blue Head Phones'
-      },
-      {
         image: 'Images/products/A4X7_1_2014120394446664.jpg',
         itemPrice: '$150.00',
         itemName: 'item 28',

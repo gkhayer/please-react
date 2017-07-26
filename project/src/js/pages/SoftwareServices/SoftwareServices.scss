@@ -40,3 +40,31 @@
   }
 }
 
+.modal-image {
+  float: left;
+  position: relative;
+  right: 20px;
+}
+
+.itemdescriptions {
+  color: $grape-color;
+}
+
+.add-to-cart.btn-default {
+  background-color: $gray;
+  border: 1px solid #808080;
+  color: $black-color;
+  margin: 8px;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    background-color: #808080;
+    border: 1px solid #808080;
+    color: $white-color;
+    margin: 8px;
+  }
+}
+
+

@@ -1,3 +1,7 @@
+.wrapper1 {
+  border: 1px solid #eee;
+  padding: 8px; }
+
 .gallery {
   background-color: #dcd0c0;
   padding-right: .9375rem;
@@ -7,8 +11,7 @@
   overflow: hidden;
   position: relative; }
   .gallery-card .images-card {
-    height: 100%;
-    width: 100%; }
+    max-width: 100%; }
 
 .gallery-thumbnail {
   border-radius: 4px;
@@ -56,8 +59,8 @@
     color: #fff; }
 
 .card-detail {
-  background-color: #9954bb;
-  color: #fff;
+  background-color: #dcd0c0;
+  color: #000;
   display: grid;
   padding: 10px;
   width: 100%; }
