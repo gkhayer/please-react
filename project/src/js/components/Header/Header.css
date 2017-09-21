@@ -1,5 +1,9 @@
 .head {
+  background-color: #6f5499;
   color: #000; }
 
-.cparts {
+.company-title {
   color: #fff; }
+  .company-title:hover, .company-title:visited, .company-title:active, .company-title:focus {
+    color: #fff;
+    text-decoration: none; }

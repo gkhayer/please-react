@@ -10,12 +10,14 @@ export default class Header extends React.Component {
      <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header className="mdl-layout__header head">
         <div className="mdl-layout__header-row">
-          <div className="mdl-layout-title"><Link className="cparts" to="Products">Computer Parts</Link></div>
+          <div className="mdl-layout-title">
+            <Link className="company-title" to="/">Computer Parts</Link>
+          </div>
           <div className="mdl-layout-spacer"></div>
           <Nav></Nav>
         </div>
       </header>
-    </div>
+     </div>
     )
   }
 }

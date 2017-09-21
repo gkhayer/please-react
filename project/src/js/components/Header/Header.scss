@@ -1,9 +1,18 @@
 @import '../../variables';
 
 .head {
+  background-color: #6f5499;
   color: $font-color;
 }
 
-.cparts {
+.company-title {
   color: $white-color;
+
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    color: $white-color;
+    text-decoration: none;
+  }
 }

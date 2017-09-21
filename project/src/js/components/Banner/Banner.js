@@ -18,11 +18,9 @@ export default class Banner extends React.Component {
   }
     render() {
         const { isProducts, isdeals, ispartners } = this.props;
-        // const history = syncHistoryWithStore(browserHistory, store)
-        // history.listen(location => analyticsService.track(location.pathname))
         return (
           <section>
-          <div className="banner-products"></div>
+            <div className="banner-products"></div>
             <div className="banner-deals"></div>
             <div className="banner-partners"></div>
            </section>

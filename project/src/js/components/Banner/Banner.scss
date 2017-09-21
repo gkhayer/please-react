@@ -2,15 +2,18 @@
 
 .banner-products {
   background-image: linear-gradient(to right, $theme-color, $purple-banner); /* Standard syntax (must be last) */
+  display: none;
   height: 200px;
   width: 100%;
 }
 
 .banner-deals {
   background-image: linear-gradient(to right, $blue-banner, $purple-banner); /* Standard syntax (must be last) */
+  display: none;
 }
 
 
 .banner-partners {
   background-image: linear-gradient(to right, $pink, $purple-banner); /* Standard syntax (must be last) */
+  display: none;
 }

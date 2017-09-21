@@ -8,16 +8,20 @@ $background-modal: $black-color(21, 21, 21, .75);
 }
 
 .gallery {
-  background-color: $gallery-background;
-  padding-right: .9375rem;
-  padding-top: .9375rem;
+  background-color: $background;
+  padding: .9375rem;
 }
 
 .gallery-card {
+  border: .5px solid $darkgray;
+  display: inline-block;
+  margin-right: 5px;
   overflow: hidden;
+  padding: 40px;
   position: relative;
 
   .images-card {
+    height: 150px;
     max-width: 100%;
   }
 }
@@ -66,6 +70,10 @@ $background-modal: $black-color(21, 21, 21, .75);
 
 .modal-body {
   padding: 20px;
+
+  img {
+    max-width: 50%;
+  }
 }
 
 .modal-close {
@@ -83,13 +91,34 @@ $background-modal: $black-color(21, 21, 21, .75);
 }
 
 .card-detail {
-  background-color: $gallery-background;
+  //background-color: $gallery-background;
   color: $black-color;
   display: grid;
-  padding: 10px;
-  width: 100%;
+  //padding: 10px;
 
   .item-price {
     text-align: right;
   }
 }
+
+.input-quantity {
+  margin-left: 30px;
+  margin-top: 20px;
+
+  .input-control {
+    margin-right: 15px;
+    padding: 5px;
+    width: 60px;
+  }
+
+  .input-group {
+    display: inline;
+  }
+}
+
+.btn-group {
+  &.addcart {
+    margin-left: 15px;
+  }
+}
+

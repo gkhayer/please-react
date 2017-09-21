@@ -3,14 +3,18 @@
   padding: 8px; }
 
 .gallery {
-  background-color: #dcd0c0;
-  padding-right: .9375rem;
-  padding-top: .9375rem; }
+  background-color: #f6f6f5;
+  padding: .9375rem; }
 
 .gallery-card {
+  border: 0.5px solid #a8a4a4;
+  display: inline-block;
+  margin-right: 5px;
   overflow: hidden;
+  padding: 40px;
   position: relative; }
   .gallery-card .images-card {
+    height: 150px;
     max-width: 100%; }
 
 .gallery-thumbnail {
@@ -47,6 +51,8 @@
 
 .modal-body {
   padding: 20px; }
+  .modal-body img {
+    max-width: 50%; }
 
 .modal-close {
   color: #000;
@@ -59,10 +65,20 @@
     color: #fff; }
 
 .card-detail {
-  background-color: #dcd0c0;
   color: #000;
-  display: grid;
-  padding: 10px;
-  width: 100%; }
+  display: grid; }
   .card-detail .item-price {
     text-align: right; }
+
+.input-quantity {
+  margin-left: 30px;
+  margin-top: 20px; }
+  .input-quantity .input-control {
+    margin-right: 15px;
+    padding: 5px;
+    width: 60px; }
+  .input-quantity .input-group {
+    display: inline; }
+
+.btn-group.addcart {
+  margin-left: 15px; }
