@@ -32,7 +32,7 @@ export default class Nav extends React.Component {
                     <ul className="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
                         htmlFor="demo-menu-lower-left">
                       <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">
-                        <Link to="Mobiles" className="child-link">Mobiles</Link>
+                        <Link to="Gaming" className="child-link">Gaming</Link>
                       </li>
                       <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">
                         <Link to="SoftwareServices" className="child-link">Software Services</Link>
@@ -52,6 +52,9 @@ export default class Nav extends React.Component {
               </li>
               <li>
                 <Link to="Partners" className="mdl-navigation__link">Partners</Link>
+              </li>
+              <li>
+                <Link to="About" className="mdl-navigation__link">About</Link>
               </li>
               <li>
                 <Link to="Contact" className="mdl-navigation__link">Contact</Link>

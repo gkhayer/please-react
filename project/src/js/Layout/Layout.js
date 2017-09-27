@@ -17,21 +17,14 @@ export default class Layout extends React.Component {
     const isproducts = location.pathname === '/products';
     return (
       <section>
-      <Banner 
-        isproducts={this.props.products} 
-        isdeals={this.props.deals}
-        ispartners={this.props.partners}
-      />
         <Header></Header>
         <div className="container">
-          <div className="row">
-            <div className="children">
-              {this.props.children}
-            </div>
+          <div className="children">
+            {this.props.children}
           </div>
         </div>
         <Footer></Footer>
-        </section>
+      </section>
     );
   }
 }

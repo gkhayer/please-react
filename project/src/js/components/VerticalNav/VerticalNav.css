@@ -1,0 +1,10 @@
+.dropdown .dropdown-toggle {
+  color: #000; }
+
+.gaming-menuitems li {
+  list-style: none; }
+  .gaming-menuitems li a {
+    cursor: pointer; }
+
+.container {
+  padding-top: 30px; }

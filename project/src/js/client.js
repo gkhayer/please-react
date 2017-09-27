@@ -9,10 +9,11 @@ import DealsServices from "./pages/DealsServices/DealsServices.js";
 import Layout from "./Layout";
 import Partners from "./pages/Partners";
 import Products from "./pages/Products";
-import Mobiles from "./pages/Mobiles";
+import Gaming from "./pages/Gaming";
 import Home from "./pages/Home";
 import SoftwareServices from "./pages/SoftwareServices";
 import ProductsDetail from "./components/ProductsDetail";
+import About from "./pages/About";
 
 
 const app = document.getElementById('app');
@@ -25,9 +26,10 @@ ReactDOM.render(
         <Route path='contact' component={Contact}></Route>
         <Route path='dealsservices' component={DealsServices}></Route>
         <Route path='products' component={Products}></Route>
-        <Route path='mobiles' component={Mobiles}></Route>
+        <Route path='gaming' component={Gaming}></Route>
         <Route path='softwareServices' component={SoftwareServices}></Route>
         <Route path='ProductsDetail' component={ProductsDetail}></Route>
+        <Route path='about' component={About}></Route>
       </Route>
   </Router>,
 app);

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ReactDOM from "react-dom";
 import { Popover, Tooltip, Button, Modal, Thumbnail, OverlayTrigger, Grid, Row, Col} from 'react-bootstrap';
 import './Gallery.css';
+import {gamingNavaData} from '../../Data/gamingSideNavData'
 
 // Component for gallery
 export default class Gallery extends React.Component{

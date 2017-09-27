@@ -7,7 +7,7 @@ export default class Header extends React.Component {
 
   render(){
     return(
-     <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+     <div>
       <header className="mdl-layout__header head">
         <div className="mdl-layout__header-row">
           <div className="mdl-layout-title">

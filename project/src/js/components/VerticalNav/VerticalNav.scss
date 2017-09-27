@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.dropdown {
+  .dropdown-toggle {
+    color: $black-color;
+  }
+}
+
+.gaming-menuitems {
+  li {
+    list-style: none;
+
+    a {
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  padding-top: 30px;
+}
