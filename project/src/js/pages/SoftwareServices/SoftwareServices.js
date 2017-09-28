@@ -119,7 +119,6 @@ export default class SoftwareServices extends React.Component {
             </Modal.Footer>
           </Modal>
         }
-
       </div>
     )
   }

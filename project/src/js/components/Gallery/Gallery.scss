@@ -19,9 +19,9 @@ $background-modal: $black-color(21, 21, 21, .75);
   overflow: hidden;
   padding: 40px;
   position: relative;
+  width: 275px;
 
   .images-card {
-    height: 150px;
     max-width: 100%;
   }
 }

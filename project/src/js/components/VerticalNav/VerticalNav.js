@@ -1,13 +1,12 @@
 import React, {Components} from 'react';
 import PropTypes from 'prop-types';
 import {gamingNavaData} from '../../Data/gamingSideNavData';
-import { Row, Col, Grid, Nav, NavDropdown, MenuItem, ListGroup, } from 'react-bootstrap';
+import { Row, Col, Grid, Nav, NavDropdown, MenuItem, ListGroup, Image } from 'react-bootstrap';
 import './VerticalNav.css';
 
 export default class VerticalNav extends React.Component {
 
   state = {
-   // defaultData: images,
     selectedItem: null,
   }
 
@@ -15,16 +14,16 @@ export default class VerticalNav extends React.Component {
     this.setState({data})
   }
 
-  showproducts(products) {
+  showproducts(product) {
     return () => {
       this.setState({
-        selectedItem: products,
+        selectedItem: product,
       });
     }
   };
 
   render() {
-    const selectedItem = this.state.selectedItem;  
+    const {selectedItem} = this.state;
 
     return (
       <Grid className="vertical-nav">
@@ -36,32 +35,25 @@ export default class VerticalNav extends React.Component {
                 <div key={`img${idx}`}>
                   <h4>{value.heading}</h4>
                   <ul className="gaming-menuitems">
-                    {value.items.map((v, i) => <li key={`game${i}`}><a>{v.name}</a></li>)}
+                    {value.items.map((v, i) => <li key={`game${i}`} onClick={this.showproducts(v).bind(this)}><a>{v.name}</a></li>)}
                   </ul>
                 </div>
               )
             })
           }
           </Col>
-          <Col md={6}>
-          {
-            gamingNavaData.map((val, indx) => {
-              return (
-               <div key={`prod${indx}`}>
-                {val.items.map((v) => {v.products})}
-               </div>
-              )
-            })
-          }
-          </Col>
+          <Col md={9} className="gaming-content-section">
           {
             selectedItem &&
-            <Col md={3}>
-              <Row>
-                <Col md={3}>{selectedItem.items.map((v) => <div>{v.products}</div>)}</Col>
-              </Row>
-            </Col>
+            <Row>
+            {selectedItem.products.map((v, i) => 
+              <Col md={4} key={`product${i}`} className="selected-item-products">
+                <Image src={v} alt="image" className="products-image" />
+              </Col>
+            )}
+            </Row>
           }
+          </Col>
         </Row>
       </Grid>
     )
