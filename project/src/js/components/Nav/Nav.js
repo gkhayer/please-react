@@ -24,7 +24,7 @@ export default class Nav extends React.Component {
           <div>
             <ul className="nav navbar-nav">
               <li>
-                <Link to="Products" className="mdl-navigation__link">Products</Link>
+                <Link to="ProductInfo" className="mdl-navigation__link">Gallery</Link>
               </li>
               <li>
                 <Link to="DealsServices" className="mdl-navigation__link" id="demo-menu-lower-left">

@@ -12,9 +12,9 @@
   margin-right: 5px;
   overflow: hidden;
   padding: 40px;
-  position: relative; }
+  position: relative;
+  width: 275px; }
   .gallery-card .images-card {
-    height: 150px;
     max-width: 100%; }
 
 .gallery-thumbnail {

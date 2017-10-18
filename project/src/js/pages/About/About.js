@@ -1,6 +1,5 @@
 import React, {Components} from 'react';
 import PropTypes from 'prop-types';
-import ReactDOM from "react-dom";
 import { Row, Col, Grid } from 'react-bootstrap';
 import './About.css';
 

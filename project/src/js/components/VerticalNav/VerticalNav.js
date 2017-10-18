@@ -1,7 +1,7 @@
 import React, {Components} from 'react';
 import PropTypes from 'prop-types';
 import {gamingNavaData} from '../../Data/gamingSideNavData';
-import { Row, Col, Grid, Nav, NavDropdown, MenuItem, ListGroup, Image } from 'react-bootstrap';
+import { Row, Col, Grid, Nav, NavDropdown, MenuItem, ListGroup, Image, Tooltip } from 'react-bootstrap';
 import './VerticalNav.css';
 
 export default class VerticalNav extends React.Component {
@@ -49,6 +49,7 @@ export default class VerticalNav extends React.Component {
             {selectedItem.products.map((v, i) => 
               <Col md={4} key={`product${i}`} className="selected-item-products">
                 <Image src={v} alt="image" className="products-image" />
+                <div>Price:</div>
               </Col>
             )}
             </Row>

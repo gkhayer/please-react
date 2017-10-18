@@ -14,7 +14,6 @@ export default class Layout extends React.Component {
   };
 
   render() {
-    const isproducts = location.pathname === '/products';
     return (
       <section>
         <Header></Header>

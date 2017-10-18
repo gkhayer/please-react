@@ -4,7 +4,8 @@
 .gaming-menuitems li {
   list-style: none; }
   .gaming-menuitems li a {
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
 
 .gaming-content-section .products-image {
   border: 0.5px solid #eee;
@@ -13,3 +14,6 @@
 
 .container {
   padding-top: 30px; }
+
+.selected-item-products {
+  padding: 10px; }
