@@ -1,0 +1,12 @@
+/**/.vs/
+/**/.vscode/*
+/**/dist/
+/**/node_modules/*
+/**/bower_components/*
+/**/.sass-cache/*
+/**/wwwroot/css/*.css
+/**/wwwroot/css/*.css.map
+/**/wwwroot/js/*
+debug.log
+/**/bin
+/**/obj
