@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "learning",
   "main": "webpack.config.js",
+  "pre-commit": ["lint"],
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/"
   },
   "author": "",
   "license": "ISC",
@@ -41,6 +43,8 @@
     "browserify": "^14.4.0",
     "css-loader": "^0.28.0",
     "envify": "^4.1.0",
+    "eslint": "^4.9.0",
+    "eslint-plugin-react": "^7.4.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^1.1.5",
     "gulp": "^3.9.1",

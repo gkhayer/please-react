@@ -7,6 +7,7 @@ import './VerticalNav.css';
 export default class VerticalNav extends React.Component {
 
   state = {
+    data: gamingNavaData,
     selectedItem: null,
   }
 
@@ -23,11 +24,13 @@ export default class VerticalNav extends React.Component {
   };
 
   render() {
-    const {selectedItem} = this.state;
+    const {data} = this.state;
+    const selectedItem = this.state.selectedItem;
+    console.log(data);
 
     return (
       <Grid className="vertical-nav">
-        <Row>
+        <Row> 
           <Col md={3}>
           {
             gamingNavaData.map((value, idx) => {
@@ -42,19 +45,21 @@ export default class VerticalNav extends React.Component {
             })
           }
           </Col>
-          <Col md={9} className="gaming-content-section">
-          {
-            selectedItem &&
-            <Row>
-            {selectedItem.products.map((v, i) => 
-              <Col md={4} key={`product${i}`} className="selected-item-products">
-                <Image src={v} alt="image" className="products-image" />
-                <div>Price:</div>
-              </Col>
-            )}
-            </Row>
-          }
-          </Col>
+            <Col md={9} className="gaming-content-section">
+            {
+              selectedItem &&
+              <Row>
+              {
+                selectedItem.products.map((v, i) => 
+                <Col md={4} key={`product${i}`} className="selected-item-products">
+                <Image src={v.image} alt="image" className="products-image" />
+                <div className="products-price">Price:{v.price}</div>
+                </Col>
+                )
+              }
+              </Row>
+            }
+            </Col>
         </Row>
       </Grid>
     )

@@ -1,7 +1,7 @@
-import React from "react";
-import {render} from "react-dom";
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-
+import React from 'react';
+import {render} from 'react-dom';
+import { Router, Route, IndexRoute, browserHistory, ReactRouter, useRouterHistory } from 'react-router';
+import { createHistory, useBeforeUnload } from 'history'
 import Contact from "./pages/Contact/Contact.js";
 import DealsServices from "./pages/DealsServices/DealsServices.js";
 import Layout from "./Layout";
@@ -15,6 +15,7 @@ import About from "./pages/About";
 
 
 const app = document.getElementById('app');
+
 
 render(
   <Router history={browserHistory}>
@@ -30,5 +31,4 @@ render(
         <Route path='about' component={About}></Route>
       </Route>
   </Router>,
-  document.getElementById('app')
-)
+  document.getElementById('app'));

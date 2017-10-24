@@ -3,9 +3,12 @@
 
 .gaming-menuitems li {
   list-style: none; }
-  .gaming-menuitems li a {
-    cursor: pointer;
-    text-decoration: none; }
+
+.gaming-menuitems a {
+  cursor: pointer;
+  text-decoration: none; }
+  .gaming-menuitems a :active {
+    color: #fb7f59; }
 
 .gaming-content-section .products-image {
   border: 0.5px solid #eee;
@@ -17,3 +20,6 @@
 
 .selected-item-products {
   padding: 10px; }
+
+.products-price {
+  text-align: center; }
