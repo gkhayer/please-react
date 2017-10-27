@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory, ReactRouter, useRouterHistory } from 'react-router';
-import { createHistory, useBeforeUnload } from 'history'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { createHashHistory  } from 'history'
 import Contact from "./pages/Contact/Contact.js";
 import DealsServices from "./pages/DealsServices/DealsServices.js";
 import Layout from "./Layout";
@@ -13,12 +13,10 @@ import SoftwareServices from "./pages/SoftwareServices";
 import ProductsDetail from "./components/ProductsDetail";
 import About from "./pages/About";
 
-
 const app = document.getElementById('app');
 
-
 render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
       <Route path='/' component={Layout}>
         <IndexRoute component={Home}/>
         <Route path='partners' active component={Partners}></Route>

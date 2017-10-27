@@ -1,18 +1,28 @@
 @import '../../variables';
 
+.mdl-layout mdl-js-layout {
+  .mdl-layout__drawer {
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+}
+
 .head {
-  background-color: #6f5499;
   color: $font-color;
+  position: relative;
 }
 
 .company-title {
-  color: $white-color;
+  color: $white;
 
   &:hover,
   &:visited,
   &:active,
   &:focus {
-    color: $white-color;
+    color: $white;
     text-decoration: none;
   }
 }
+
+

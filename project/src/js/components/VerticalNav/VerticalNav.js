@@ -26,7 +26,6 @@ export default class VerticalNav extends React.Component {
   render() {
     const {data} = this.state;
     const selectedItem = this.state.selectedItem;
-    console.log(data);
 
     return (
       <Grid className="vertical-nav">
