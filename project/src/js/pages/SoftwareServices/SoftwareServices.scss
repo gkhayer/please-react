@@ -16,7 +16,7 @@
 
   .softwares {
     background-color: $grape-color;
-    color: $white-color;
+    color: $white;
   }
 }
 
@@ -34,7 +34,7 @@
       &:active:hover {
         background-color: $gray;
         border-color: $gray;
-        color: $black-color;
+        color: $black;
       }
     }
   }
@@ -53,7 +53,7 @@
 .add-to-cart.btn-default {
   background-color: $gray;
   border: 1px solid #808080;
-  color: $black-color;
+  color: $black;
   margin: 8px;
 
   &:hover,
@@ -62,7 +62,7 @@
   &:visited {
     background-color: #808080;
     border: 1px solid #808080;
-    color: $white-color;
+    color: $white;
     margin: 8px;
   }
 }
