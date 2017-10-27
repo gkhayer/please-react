@@ -2,7 +2,7 @@
 
 .dropdown {
   .dropdown-toggle {
-    color: $black-color;
+    color: $black;
   }
 }
 
@@ -16,7 +16,7 @@
     text-decoration: none;
 
     & :active {
-      color: #fb7f59;
+      color: $orange;
     }
   }
 }
@@ -28,10 +28,6 @@
     max-width: 100%;
     padding: 10px;
   }
-}
-
-.container {
-  padding-top: 30px;
 }
 
 .selected-item-products {

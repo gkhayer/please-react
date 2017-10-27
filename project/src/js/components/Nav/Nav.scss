@@ -6,19 +6,24 @@
 
   .navbar-nav {
     li {
+      &:focus,
+      &:hover,
+      &:active {
+        background-color: $selected-item;
+        color: $white;
+      }
+
       a {
-        color: $white-color;
-        font-size: $heading-size;
+        color: $white;
 
         &:focus,
         &:hover,
         &:active {
-          background-color: $salmon-color;
+          background-color: $selected-item;
         }
 
         .child-link {
-          color: $black-color;
-          font-size: 15px;
+          color: $black;
         }
       }
 
@@ -26,6 +31,14 @@
         padding: 14.5px;
       }
     }
+  }
+}
+
+.dealservice {
+  border: 1px solid $orange;
+
+  .child-link {
+    border: 1px solid $red;
   }
 }
 

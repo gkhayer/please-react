@@ -1,13 +1,22 @@
+a {
+  text-decoration: none; }
+
 .mdl-layout__header {
   background-color: #a7d2cb;
   border-color: #a7d2cb; }
+  .mdl-layout__header .navbar-nav li:focus, .mdl-layout__header .navbar-nav li:hover, .mdl-layout__header .navbar-nav li:active {
+    background-color: #7c88ca;
+    color: #fff; }
   .mdl-layout__header .navbar-nav li a {
-    color: #fff;
-    font-size: 20px; }
+    color: #fff; }
     .mdl-layout__header .navbar-nav li a:focus, .mdl-layout__header .navbar-nav li a:hover, .mdl-layout__header .navbar-nav li a:active {
-      background-color: #c0b283; }
+      background-color: #7c88ca; }
     .mdl-layout__header .navbar-nav li a .child-link {
-      color: #000;
-      font-size: 15px; }
+      color: #000; }
   .mdl-layout__header .navbar-nav li img {
     padding: 14.5px; }
+
+.dealservice {
+  border: 1px solid #fb7f59; }
+  .dealservice .child-link {
+    border: 1px solid #ba3434; }
