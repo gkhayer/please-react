@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "learning",
   "main": "webpack.config.js",
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint src/"
   },
   "author": "",
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
+    "babel-eslint": "^8.0.1",
     "babel-loader": "^6.4.1",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-react-html-attrs": "^2.0.0",
@@ -50,6 +53,7 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
+    "jest": "^21.2.1",
     "style-loader": "^0.16.1",
     "watchify": "^3.9.0",
     "webpack": "^2.3.2",

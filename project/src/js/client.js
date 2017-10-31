@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import SoftwareServices from "./pages/SoftwareServices";
 import ProductsDetail from "./components/ProductsDetail";
 import About from "./pages/About";
+import DailyDeals from "./pages/DailyDeals";
 
 const app = document.getElementById('app');
 
@@ -21,7 +22,7 @@ render(
         <IndexRoute component={Home}/>
         <Route path='partners' active component={Partners}></Route>
         <Route path='contact' component={Contact}></Route>
-        <Route path='dealsservices' component={DealsServices}></Route>
+        <Route path='dailyDeals' component={DailyDeals}></Route>
         <Route path='ProductInfo' component={ProductInfo}></Route>
         <Route path='gaming' component={Gaming}></Route>
         <Route path='softwareServices' component={SoftwareServices}></Route>

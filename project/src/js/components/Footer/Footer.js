@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 import './Footer.css';
 
-export default class Footer extends React.Component {
+class Footer extends React.Component {
   render(){
     return (
       <section>
@@ -38,3 +38,5 @@ export default class Footer extends React.Component {
     );
   }
 }
+
+export default Footer;

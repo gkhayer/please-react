@@ -34,7 +34,7 @@ export default class Nav extends React.Component {
                     <Link to="SoftwareServices" className="child-link">Software Services</Link>
                   </li>
                   <li className="mdl-menu__item mdl-menu__item--full-bleed-divider">
-                    <Link className="child-link">Daily Deals</Link>
+                    <Link to="DailyDeals" className="child-link">Daily Deals</Link>
                   </li>
                   <li className="mdl-menu__item">
                     <Link className="child-link">Marketplace Spotlight</Link>

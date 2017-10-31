@@ -1,3 +1,6 @@
+a {
+  text-decoration: none; }
+
 .banner-products {
   background-image: linear-gradient(to right, #a7d2cb, #7d2ae8);
   /* Standard syntax (must be last) */

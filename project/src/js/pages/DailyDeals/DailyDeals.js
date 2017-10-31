@@ -1,7 +1,8 @@
-import React from "react";
-import './Datetime.css';
+import React, {Components} from 'react';
+import CouponLayout from '../../components/CouponLayout';
 
-export default class Datetime extends React.Component {
+
+export default class DealsDaily extends React.Component {
   constructor(){
     super();
     this.updateTime = this.updateTime.bind(this);
@@ -27,7 +28,9 @@ export default class Datetime extends React.Component {
   render(){
     return(
       <div className="wrapper">
-          <span className="top-bar">{this.state.date}</span>
+        <div>
+          <CouponLayout couponTimer={this.state.date}/>
+        </div>
       </div>
     );
   }
