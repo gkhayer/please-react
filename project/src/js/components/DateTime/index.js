@@ -25,7 +25,7 @@ export default class Datetime extends React.Component {
 
   render(){
     return(
-      <div className="wrapper">
+      <div>
           <span className="top-bar">{this.state.date}</span>
       </div>
     );

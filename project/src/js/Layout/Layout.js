@@ -15,15 +15,11 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <section>
+      <div>
         <Header></Header>
-        <div className="container">
-          <div className="children">
-            {this.props.children}
-          </div>
-        </div>
+          <div>{this.props.children}</div>
         <Footer></Footer>
-      </section>
+      </div>
     );
   }
 }

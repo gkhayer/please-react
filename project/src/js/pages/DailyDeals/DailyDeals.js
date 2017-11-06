@@ -13,7 +13,7 @@ export default class DealsDaily extends React.Component {
   }
 
   updateTime(){
-    this.setState({date: (new Date()).toLocaleTimeString()});
+   this.setState({date: (new Date()).toLocaleTimeString()});
   }
 
   componentWillMount() {
@@ -27,10 +27,8 @@ export default class DealsDaily extends React.Component {
 
   render(){
     return(
-      <div className="wrapper">
-        <div>
-          <CouponLayout couponTimer={this.state.date}/>
-        </div>
+      <div>
+        <CouponLayout couponTimer={this.state.date}/>
       </div>
     );
   }

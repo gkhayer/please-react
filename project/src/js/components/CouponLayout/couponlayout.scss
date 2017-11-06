@@ -1,12 +1,54 @@
 @import '../../variables';
 
-.outer-coupon-border {
-  border: 1px solid $red;
-  padding: 2px;
-}
+.container {
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+  padding: 63px 0;
 
-.inner-coupon-border {
-  background-color: $red;
-  border: 1px dotted $black;
-  padding: 10px;
+  .wrapper-coupon {
+    border: 1px solid $red;
+    color: $white;
+    display: flex;
+    margin: 0 0 20px;
+    padding: 2px;
+    text-align: right;
+    width: 600px;
+
+    .vertical {
+      background-color: $black;
+      color: $pink;
+      padding: 8px;
+      text-align: center;
+      writing-mode: vertical-rl;
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .horizontal {
+      background-color: $red;
+      border: 5px dotted $black;
+
+      .coupon-timer {
+        font-size: 2em;
+        padding: 4px;
+      }
+
+      .title {
+        font-size: 3em;
+        padding: 8px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 2em;
+      }
+
+      .coupon-value {
+        font-size: 50px;
+        padding: 8px;
+      }
+    }
+  }
 }

@@ -1,6 +1,11 @@
 a {
   text-decoration: none; }
 
+.container {
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+  padding: 63px 0; }
+
 .img {
   display: inline-block;
   position: relative; }

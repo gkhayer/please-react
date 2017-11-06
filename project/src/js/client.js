@@ -3,7 +3,6 @@ import {render} from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import { createHashHistory  } from 'history'
 import Contact from "./pages/Contact/Contact.js";
-import DealsServices from "./pages/DealsServices/DealsServices.js";
 import Layout from "./Layout";
 import Partners from "./pages/Partners";
 import ProductInfo from "./pages/ProductInfo";

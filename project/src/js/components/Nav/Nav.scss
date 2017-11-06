@@ -1,45 +1,9 @@
 @import '../../variables';
 
-.mdl-layout__header {
-  background-color: $theme-color;
-  border-color: $theme-color;
-
-  .navbar-nav {
-    li {
-      &:focus,
-      &:hover,
-      &:active {
-        background-color: $selected-item;
-        color: $white;
-      }
-
-      a {
-        color: $white;
-
-        &:focus,
-        &:hover,
-        &:active {
-          background-color: $selected-item;
-        }
-
-        .child-link {
-          color: $black;
-        }
-      }
-
-      img {
-        padding: 14.5px;
-      }
+.mdl-navigation__link {
+  nav {
+    a {
+      text-decoration: none !important;
     }
   }
 }
-
-.dealservice {
-  border: 1px solid $orange;
-
-  .child-link {
-    border: 1px solid $red;
-  }
-}
-
-
