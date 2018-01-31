@@ -13,7 +13,7 @@ class ProductInfo extends React.Component {
       products: [],
 			cart: [],
 			totalItems: 0,
-			totalAmount: 0, 
+			totalAmount: 0,
 			term: '',
 			category: '',
 			cartBounce: false,

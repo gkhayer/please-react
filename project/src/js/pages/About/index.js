@@ -1,5 +1,4 @@
 import React, {Components} from 'react';
-import PropTypes from 'prop-types';
 import { Row, Col, Grid } from 'react-bootstrap';
 import './About.css';
 

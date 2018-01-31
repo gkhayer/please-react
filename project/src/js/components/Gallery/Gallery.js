@@ -1,5 +1,4 @@
 import React, { Components} from 'react';
-import PropTypes from 'prop-types';
 import { Popover, Tooltip, Button, Modal, Thumbnail, OverlayTrigger, Grid, Row, Col} from 'react-bootstrap';
 import './Gallery.css';
 import {gamingNavaData} from '../../Data/gamingSideNavData';

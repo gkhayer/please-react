@@ -1,5 +1,4 @@
 import React, {Components} from 'react';
-import PropTypes from 'prop-types';
 import { Row, Col, Grid, Carousel, Nav, NavItem} from 'react-bootstrap';
 import './Gaming.css';
 

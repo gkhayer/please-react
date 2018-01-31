@@ -1,5 +1,4 @@
 import React, {Components} from 'react';
-import PropTypes from 'prop-types';
 import {gamingNavaData} from '../../Data/gamingSideNavData';
 import { Row, Col, Grid, Nav, NavDropdown, MenuItem, ListGroup, Image, Tooltip } from 'react-bootstrap';
 import './VerticalNav.css';
