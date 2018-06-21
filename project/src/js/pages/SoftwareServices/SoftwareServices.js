@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Row, Col, Grid, Carousel, Image, FieldGroup, ListGroup, Button, Modal, ListGroupItem, Table} from 'react-bootstrap';
 import './SoftwareServices.css';
 import {operatingSystem, productivitySoftware, securitySoftware, audioVideoSoftware} from '../../Data/SoftwareServicesData';
