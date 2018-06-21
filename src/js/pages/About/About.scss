@@ -1,0 +1,39 @@
+@import '../../variables';
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+  padding: 63px 0;
+}
+
+.img {
+  display: inline-block;
+  position: relative;
+}
+
+.image1 {
+  left: 500px;
+  position: absolute;
+  top: 190px;
+  z-index: 2;
+}
+
+.image2 {
+  left: 600px;
+  margin-left: -40px;
+  position: absolute;
+  top: 200px;
+  z-index: 3;
+}
+
+.image3 {
+  top: 8px;
+}
+
+.mobile-banner {
+  background: -webkit-linear-gradient(left, #4184ae,  #2a4e80, #4184ae,  #2a4e80, #4184ae,  #2a4e80, #4184ae); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #4184ae,  #2a4e80, #4184ae,  #2a4e80, #4184ae,  #2a4e80, #4184ae); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #4184ae,  #2a4e80, #4184ae,  #2a4e80, #4184ae,  #2a4e80, #4184ae); /* For Fx 3.6 to 15 */
+  background: linear-gradient(to right, #4184ae,  #2a4e80, #4184ae,  #2a4e80, #4184ae,  #2a4e80, #4184ae); /* Standard syntax (must be last) */
+  text-align: center;
+}

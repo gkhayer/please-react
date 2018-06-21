@@ -1,8 +1,0 @@
-.mdl-layout__header {
-  background-color: #a7d2cb;
-  border-color: #a7d2cb; }
-  .mdl-layout__header .navbar-nav li a {
-    color: #000;
-    font-size: 20px; }
-    .mdl-layout__header .navbar-nav li a:focus, .mdl-layout__header .navbar-nav li a:hover {
-      background-color: #c0b283; }

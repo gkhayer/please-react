@@ -1,0 +1,32 @@
+@import '../../variables';
+
+.mdl-layout__container {
+ // position: absolute !important;
+}
+
+.mdl-layout .mdl-js-layout {
+  .mdl-layout__drawer {
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+}
+
+.head {
+  color: $font-color;
+  position: relative;
+}
+
+.company-title {
+  color: $white;
+
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+

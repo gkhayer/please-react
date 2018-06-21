@@ -1,0 +1,39 @@
+@import '../../variables';
+
+.dropdown {
+  .dropdown-toggle {
+    color: $black;
+  }
+}
+
+.gaming-menuitems {
+  li {
+    list-style: none;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+
+    & :active {
+      color: $orange;
+    }
+  }
+}
+
+.gaming-content-section {
+
+  .products-image {
+    border: .5px solid $gray;
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+.selected-item-products {
+  padding: 10px;
+}
+
+.products-price {
+  text-align: center;
+}

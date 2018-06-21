@@ -1,0 +1,49 @@
+// Fonts
+$font: 'Roboto', sans-serif;
+$heading-font: 'Quicksand', sans-serif;
+$paragraph-font: 'Open Sans' sans-serif;
+
+$white: #fff;
+$black: #000;
+$theme-color: #a7d2cb;
+$font-color: $black;
+$selected-item: #7c88ca;
+$grape-color: #9954bb;
+$purple-banner: #7d2ae8;
+$blue-banner: #00c4cc;
+$pink: #ffc0cb;
+$gray: #eee;
+$darkgray: #a8a4a4;
+$background: #f6f6f5;
+$sky-blue-color: #46b8da;
+$red: #ba3434;
+$orange: #fb7f59;
+
+$heading-size: 20px;
+$radius-gallery: 4px;
+$transition: all .25s ease-in-out;
+
+// Media Queries
+// Use like this:
+//     @media ($xs) { . . . }
+$xs: unquote('max-width: 599px');
+$gt-xs: unquote('min-width: 600px');
+$sm: unquote('min-width: 600px) and (max-width: 959px');
+$gt-sm: unquote('min-width: 960px');
+$md: unquote('min-width: 960px) and (max-width: 1279px');
+$gt-md: unquote('min-width: 1280px');
+$lg: unquote('min-width: 1280px) and (max-width: 1919px');
+$gt-lg: unquote('min-width: 1920px');
+$xl: unquote('min-width: 1920px');
+
+// Anchors Mixin
+a {
+  text-decoration: none;
+}
+
+// Heading Placeholder
+%heading {
+  color: $black;
+  font-family: $heading-font;
+  font-weight: 300;
+}
