@@ -1,4 +1,4 @@
-[
+const cardDetail = [
   {
     "id": 1,
     "image": "Images/products/1B4-003A-00066-01.jpg",
@@ -203,3 +203,7 @@
     "itemDetail": "razer_mouse gaming"
   }
 ]
+
+export {
+  cardDetail
+}

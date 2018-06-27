@@ -1,14 +1,19 @@
-import React, { Components} from 'react';
-import PropTypes from 'prop-types';
-import { Popover, Tooltip, Button, Modal, Thumbnail, OverlayTrigger, Grid, Row, Col} from 'react-bootstrap';
+import React from 'react';
+import { Button, Modal} from 'react-bootstrap';
 import './Gallery.css';
-import {gamingNavaData} from '../../Data/gamingSideNavData';
-import {cardDetail} from '../../Data/ProductData';
+import {cardDetail} from '../../Data/ProductData/index';
+
 // Component for gallery
 export default class Gallery extends React.Component{
-  state = {
+  constructor(){
+    super();
+
+    this.state = {
      selectedItem: null,
-  }
+  };
+  this.open = this.open.bind(this);
+  this.close = this.close.bind(this);
+}
 
   close() {
     this.setState({ selectedItem: null });
@@ -23,11 +28,6 @@ export default class Gallery extends React.Component{
   };
 
   render() {
-  const popover = (
-    <Popover id="modal-popover" title="popover">
-       This item ships to the Continental US only, do you still want to add it to your cart?
-      </Popover>
-  );
 
   const selectedItem = this.state.selectedItem;
 
@@ -45,7 +45,7 @@ export default class Gallery extends React.Component{
                 bsStyle="primary"
                 bsSize="small"
                 onClick={this.open(value).bind(this)} >
-                View Detail 
+                View Detail
               </Button>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default class Gallery extends React.Component{
           </div>
           <div className="btn-group">
             <button className="btn btn-warning addcart"
-              type="button" 
+              type="button"
               aria-haspopup="true"
               aria-expanded="false"
             >
