@@ -5,7 +5,7 @@ class ProductInfo extends React.Component {
 
   render(){
     return(
-      <div>
+      <div className="container">
         <h1>Products</h1>
         <Gallery />
       </div>
