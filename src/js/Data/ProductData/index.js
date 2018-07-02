@@ -194,13 +194,6 @@ const cardDetail = [
     "itemPrice": "$190.00",
     "itemName": "item 16",
     "itemDetail": "Server 2"
-  },
-  {
-    "id": 29,
-    "image": "Images/products/razer_mouse gaming.jpg",
-    "itemPrice": "$400.00",
-    "itemName": "item 24",
-    "itemDetail": "razer_mouse gaming"
   }
 ]
 
