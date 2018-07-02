@@ -17,7 +17,9 @@ $background-modal: $black(21, 21, 21, .75);
 
 .gallery-card {
   border: .5px solid $darkgray;
-  display: inline-block;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
   margin: 5px;
   overflow: hidden;
   padding: 15px;
@@ -94,10 +96,9 @@ $background-modal: $black(21, 21, 21, .75);
 }
 
 .card-detail {
-  //background-color: $gallery-background;
   color: $black;
-  display: grid;
-  //padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
 
   .item-price {
     text-align: right;
