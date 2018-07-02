@@ -9,7 +9,6 @@ export default class Layout extends React.Component {
     products: PropTypes.bool,
     deals: PropTypes.bool,
     partners: PropTypes.bool,
-    productInfo: PropTypes,
   };
 
   render() {
