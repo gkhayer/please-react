@@ -46,5 +46,5 @@ const partners = [
 ];
 
 export {
-  partners 
-}; 
+  partners
+};

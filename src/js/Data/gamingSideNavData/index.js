@@ -48,7 +48,7 @@ const gamingNavaData = [
           {'image': './../Images/xbox/Microsoft XBOX 360 Gears of War 3 Limited Edition Console 320 GB Hard Drive.jpg',
             'price':'656'
           },
-          { 
+          {
             'image': './../Images/xbox/Microsoft XBOX 360 Halo 4 320GB Limited Edition System wHalo 4 & 2 Controllers.jpg',
             'price':'878'
           },
@@ -266,7 +266,6 @@ const gamingNavaData = [
       {
         'name': 'Gaming Desktops',
         'products' :[
-          
           { 'image': '../Images/xbox/Forza Motorsport 7 Ultimate Edition - Xbox One.jpg',
             'price': '$53'
           },

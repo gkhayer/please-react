@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import {Row, Col, Grid, Carousel, Image, FieldGroup, ListGroup, Button, Modal, ListGroupItem, Table} from 'react-bootstrap';
+import {Row, Col, Grid, Carousel, Image, Button, Modal, Table} from 'react-bootstrap';
 import './SoftwareServices.css';
 import {operatingSystem, productivitySoftware, securitySoftware, audioVideoSoftware} from '../../Data/SoftwareServicesData';
-import ProductsDetail from '../../components/ProductsDetail';
 
 export default class SoftwareServices extends React.Component {
 
@@ -31,7 +29,7 @@ export default class SoftwareServices extends React.Component {
     const selectedItem = this.state.selectedItem;
 
     return (
-      <div>
+      <div className="container">
         <div className="wrapper-mobiles">
           <Carousel>
             <Carousel.Item>

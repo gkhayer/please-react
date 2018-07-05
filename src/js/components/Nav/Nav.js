@@ -19,7 +19,6 @@ export default class Nav extends React.Component {
   render() {
     return (
         <nav className="mdl-navigation" role="navigation">
-          <Link to="ProductInfo" className="mdl-navigation__link">Products</Link>   
           <Link className="mdl-navigation__link" id="demo-menu-lower-left">Deals and Services
             <ul className="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
               htmlFor="demo-menu-lower-left">
