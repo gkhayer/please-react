@@ -61,11 +61,6 @@ export default class SoftwareServices extends React.Component {
                 <div className="softwares">Audio & Video Software</div>
               </Col>
             </Row>
-            <Row>
-              <Col md={3}>
-                <h2>Featured Items</h2>
-              </Col>
-            </Row>
           </Grid>
         </div>
         {
@@ -98,7 +93,7 @@ export default class SoftwareServices extends React.Component {
           )
         }
         {
-          selectedItem && 
+          selectedItem &&
           <Modal show onHide={this.close.bind(this)}>
             <Modal.Header closeButton>
               <Modal.Title>{selectedItem.desc}</Modal.Title>

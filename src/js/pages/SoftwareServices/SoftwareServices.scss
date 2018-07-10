@@ -1,6 +1,10 @@
 @import '../../variables';
 
 .categories {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
   .col-md-3 {
     border: .5px solid $gray;
     cursor: pointer;
