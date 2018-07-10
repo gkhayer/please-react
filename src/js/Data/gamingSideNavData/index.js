@@ -7,7 +7,7 @@ const gamingNavaData = [
         'products' :[
           {
             'image': './../Images/xbox/Shop Subscriptions & Gift Cards.jpg',
-            'price': '$254'
+            'price': '254'
           },
           {
             'image': './../Images/xbox/Destiny 2 - Xbox One.jpg',
