@@ -5,8 +5,8 @@ import { withScriptjs, withGoogleMap, GoogleMap } from 'react-google-maps';
 export default class Maps extends Component {
   render() {
     const center = {
-      lat: 35.188664,
-      lng: -106.601568,
+      lat: 38.7521,
+      lng: 121.2880,
     };
     const GettingStartedGoogleMap = withGoogleMap(props => (
       <GoogleMap
